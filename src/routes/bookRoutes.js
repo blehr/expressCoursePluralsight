@@ -4,6 +4,14 @@ const objectId = require('mongodb').ObjectID;
 const bookRouter = express.Router();
 
 const router = nav => {
+    // secure route
+    bookRouter.use((req, res, next) => {
+       if (!req.user) {
+           res.redirect('/');
+       } else {
+           next();
+       }
+    });
     
     bookRouter.route('/')
         .get((req, res) => {
