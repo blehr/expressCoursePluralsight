@@ -5,19 +5,23 @@ const adminRouter = express.Router();
 const books = [
     {
         title: 'My Book',
-        author: 'Me Obviously'
+        author: 'Me Obviously',
+        bookId: 656
     }, 
     {
         title: 'Not My Book',
-        author: 'Not Me Obviously'
+        author: 'Not Me Obviously',
+        bookId: 1184
     }, 
     {
         title: 'Your Book',
-        author: 'You Obviously'
+        author: 'You Obviously',
+        bookId: 254
     }, 
     {
         title: 'Not Your Book',
-        author: 'Not You Obviously'
+        author: 'Not You Obviously',
+        bookId: 657
     }
 ];
     
